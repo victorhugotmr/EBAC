@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>jQuery</title>
+    <title>Shoe'Store</title>
 </head>
 <body>
     
@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#featured" rel="products.html" rel="produto">Produtos</a>
+                        <a class="nav-link" href="#featured" rel="products.html">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
@@ -217,7 +217,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="copyright-text">
-                            <p>WebStore &copy; Todos os direitos reservados</p>
+                            <p>Shoe'Store &copy; Todos os direitos reservados</p>
                         </div>
                     </div>
                 </div>
@@ -225,9 +225,14 @@
         </div>
 
         
+        <!-- Modal trigger button -->
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+          Launch
+        </button>
+        
         <!-- Modal Body -->
         <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-        <div class="modal fade" id="modelId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -236,18 +241,19 @@
                     </div>
                     <div class="modal-body">
 
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
         </div>
         
+        
+        <!-- Optional: Place to the bottom of scripts -->
+        <!-- <script>
+            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+        
+        </script> -->
 
-        <div id="contato" class="visually-hidden">
+        <div id="contato" class=" visually-hidden">
             <form action="" class="form">
                 <div class="mb-3">
                   <label for="nome" class="form-label">Nome</label>
