@@ -31,6 +31,8 @@ function tarefasSASS(callback){
 
     gulp.src('./src/scss/**/*.scss')
         .pipe(sass())
+        .pipe(cssmin())
+        .pipe(rename( { suffix: '.min' } ))
         .pipe(gulp.dest('./dist/css'))
     
     return callback()
@@ -95,7 +97,7 @@ gulp.task('serve', function(){
     gulp.watch('./src/**/*').on('change', reload)
 })
 
-const process = series( tarefasHTML, tarefasCSS, tarefasJS, tarefasSASS )
+const process = parallel( tarefasHTML, tarefasSASS, tarefasCSS, tarefasJS  )
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
