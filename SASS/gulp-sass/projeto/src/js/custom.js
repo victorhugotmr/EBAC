@@ -67,19 +67,19 @@ $(document).ready(function(){
 
      })
 
-   $('a').on('click', function(e){
+   // $('a').on('click', function(e){
 
-      e.preventDefault();
+   //    e.preventDefault();
 
-      let elem = $(this).attr('rel')
+   //    let elem = $(this).attr('rel')
 
-      $('.modal-body').html($('#'+elem).html())
-      $('.modal-body h5.modal-title').html(elem.text())
+   //    $('.modal-body').html($('#'+elem).html())
+   //    $('.modal-body h5.modal-title').html(elem.text())
 
-      let myModal = new bootstrap.Modal($('#modalId'))
+   //    let myModal = new bootstrap.Modal($('#modalId'))
 
-      myModal.show()
-   })
+   //    myModal.show()
+   // })
 
 
 })
