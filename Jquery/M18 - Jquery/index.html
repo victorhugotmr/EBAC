@@ -27,13 +27,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#featured" rel="products.html">Produtos</a>
+                        <a class="nav-link" href="#featured" rel="products">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
+                        <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -50,21 +50,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/images/Nike-Air-Max-1-Black-White-Light-Bone-41.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/images/Nike-Air-Max-1-Black-White-Light-Bone-41.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Nike Air Max 1</h5>
                             <p>Estilo e elegância.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/https___hypebeast.com_wp-content_blogs.dir_6_files_2022_03_adidas-yeezy-boost-350-v2-oreo-sneakers-re-release-launch-price-date-0.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/images/https___hypebeast.com_wp-content_blogs.dir_6_files_2022_03_adidas-yeezy-boost-350-v2-oreo-sneakers-re-release-launch-price-date-0.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Adidas Yeezy Boost V</h5>
                             <p>Kanye West é um gênio.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/vansoldskool.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/images/vansoldskool.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Vans Old Skool</h5>
                             <p>Retrô sem perder o estilo.</p>
@@ -178,6 +178,40 @@
             </div>
         </div>
         
+        <div class="subscribe-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Receba novidades</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="main-content">
+                            <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                            <div class="container">
+                                <form id="subscribe" class="form" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <fieldset>
+                                                <input name="email" type="text" class="form-control" id="email" value="" placeholder="Seu e-mail..." >
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footer" id="footer">
             <div class="container">
                 <div class="row">
@@ -226,7 +260,7 @@
 
         
         <!-- Modal trigger button -->
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+        <button type="button" class="btn btn-primary btn-lg visually-hidden" data-bs-toggle="modal" data-bs-target="#modalId">
           Launch
         </button>
         
@@ -253,18 +287,79 @@
         
         </script> -->
 
-        <div id="contato" class=" visually-hidden">
-            <form action="" class="form">
+        <div id="contato" class="visually-hidden">
+
+            <form action="post" class="form">
+    
                 <div class="mb-3">
                   <label for="nome" class="form-label">Nome</label>
-                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
-                  <small id="helpNome" class="text-muted">Digite um nome válido</small>
+                  <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                  <small id="helpNome" class="text-muted">
+                      Digite um nome válido
+                  </small>
                 </div>
+    
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                    <small id="helpEmail" class="text-muted">
+                        Digite um e-mail válido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="date" class="form-label">Data</label>
+                    <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
+                    <small id="helpDate" class="text-muted">
+                        Digite uma data válida
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="time" class="form-label">Hora</label>
+                    <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+                    <small id="helpHora" class="text-muted">
+                        Digite um tempo válido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep" aria-describedby="helpCEP">
+                    <small id="helpCEP" class="text-muted">
+                        Digite um tempo válido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Celular</label>
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu phone" aria-describedby="helpCelular" required>
+                    <small id="helpCelular" class="text-muted">
+                        Digite um celular válido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" aria-describedby="helpCPF" required>
+                    <small id="helpCPF" class="text-muted">
+                        Digite um celular válido
+                    </small>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Enviar</button>
+    
+    
             </form>
+    
         </div>
-
-        <div id="sobre">
-            
+    
+    
+        <div id="sobre" class="visually-hidden">
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+    
         </div>
         
         

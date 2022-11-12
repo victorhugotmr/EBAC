@@ -2,6 +2,7 @@
 // jQuery( function($){
 $(document).ready(function(){
 
+   console.log('aaaa')
    
 
     $('.owl-carousel').owlCarousel();
@@ -67,19 +68,21 @@ $(document).ready(function(){
 
      })
 
-   $('a').on('click', function(e){
+     $('.nav-modal-open').on('click', function(e){
 
       e.preventDefault();
 
       let elem = $(this).attr('rel')
 
       $('.modal-body').html($('#'+elem).html())
-      $('.modal-body h5.modal-title').html(elem.text())
+      
+      $('.modal-header h5.modal-title').html($(this).text())
 
       let myModal = new bootstrap.Modal($('#modalId'))
 
       myModal.show()
-   })
 
+
+   })
 
 })
