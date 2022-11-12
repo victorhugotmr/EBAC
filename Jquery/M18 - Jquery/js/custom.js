@@ -1,8 +1,6 @@
 // instancia jquery e evita conflitos
 // jQuery( function($){
 $(document).ready(function(){
-
-   console.log('aaaa')
    
 
     $('.owl-carousel').owlCarousel();
@@ -81,6 +79,159 @@ $(document).ready(function(){
       let myModal = new bootstrap.Modal($('#modalId'))
 
       myModal.show()
+
+
+   })
+
+   function validate( elem ){
+
+      if( elem.val() == ''){
+
+         console.log('o campo ' + elem.attr('name') + ' está incorreto')
+
+         elem.parent().find('.text-muted').show()
+
+         elem.addClass('invalid')
+
+         return false
+      } else {
+         elem.parent().find('.text-muted').hide()
+
+         elem.removeClass('invalid')
+      }
+   }
+
+   function validateName( elem ){
+
+      const nomeRegex = elem.val().match(/^[a-zA-Z]{2,}/)
+
+      if( elem.val() != nomeRegex ) {
+
+         console.log('o campo ' + elem.attr('name') + ' está incorreto')
+
+         elem.parent().find('.text-muted').show()
+
+         elem.addClass('invalid')
+
+         return false
+         
+      } else {
+         elem.parent().find('.text-muted').hide()
+
+         elem.removeClass('invalid')
+      }
+   }
+
+   function validateEmail( elem ){
+
+      const emailRegex = elem.val().match(/[\w._-]+@[\w._-]+\.[\w]{2,}/)
+
+      if( elem.val() != emailRegex ) {
+
+         console.log('o campo ' + elem.attr('name') + ' está incorreto')
+
+         elem.parent().find('.text-muted').show()
+
+         elem.addClass('invalid')
+
+         return false
+
+         } else {
+
+         elem.parent().find('.text-muted').hide()
+
+         elem.removeClass('invalid')
+      }
+   }
+
+   function validateCPF( elem ){
+
+      const cpfRegex = elem.val().match(/^[0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2}$/)
+
+      if( elem.val() != cpfRegex ) {
+
+         console.log('o campo ' + elem.attr('name') + ' está incorreto')
+
+         elem.parent().find('.text-muted').show()
+
+         elem.addClass('invalid')
+
+         return false
+         
+      } else {
+         elem.parent().find('.text-muted').hide()
+
+         elem.removeClass('invalid')
+      }
+   }
+
+   $('body').on('submit', '.modal-body .form', function(e){
+
+      e.preventDefault()
+
+      const inputName = $('#nome')
+      const inputEmail = $('#email')
+
+      validate(inputName)
+      validate(inputEmail)
+
+      if(inputName.hasClass('invalid') || inputEmail.hasClass('invalid')){
+
+         return false
+
+      } else {
+         
+         $(this).submit()
+         
+      }
+      
+   })
+
+
+   $('body').on('blur', '#nome', function(){
+      validateName($(this))
+   })
+
+   $('body').on('blur', '#email', function(){
+      validateEmail($(this))
+   })
+
+   $('body').on('focus', '#date', function(){
+      $((this)).datepicker();
+   })
+
+   $('body').on('blur', '#date', function(){
+      validate($(this))
+      $((this)).mask('00/00/0000');
+   })
+
+   $('body').on('blur', '#time', function(){
+      validate($(this))
+      $((this)).mask('00:00:00');
+   })
+
+   $('body').on('blur', '#date_time', function(){
+      validate($(this))
+      $((this)).mask('00/00/0000 00:00:00');
+
+   })
+
+   $('body').on('blur', '#cep', function(){
+      validate($(this))
+      $((this)).mask('00000-000');
+
+   })
+
+   $('body').on('blur', '#phone', function(){
+      validate($(this))
+      $((this)).mask('(00) 00000-0000');
+
+
+   })
+
+   $('body').on('blur', '#cpf', function(){
+      validateCPF($(this))
+      $((this)).mask('000.000.000-00');
 
 
    })
