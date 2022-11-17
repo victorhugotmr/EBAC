@@ -207,7 +207,7 @@ $(document).ready(function(){
 
    $('body').on('blur', '#time', function(){
       validate($(this))
-      $((this)).mask('00:00:00');
+      $((this)).mask('00:00');
    })
 
    $('body').on('blur', '#date_time', function(){
