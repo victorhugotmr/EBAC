@@ -1,0 +1,22 @@
+$color-font: rgb(255, 85, 122);
+$font-default: Arial, Helvetica, sans-serif;
+$bg-color: #111;
+
+*{
+  background: #111;
+}
+
+.title{
+  color: $color-font;
+  font-family: $font-default;
+}
+
+.container {
+  max-width: 100vw;
+  
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+}
