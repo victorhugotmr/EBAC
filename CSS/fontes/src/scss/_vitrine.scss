@@ -24,7 +24,7 @@
     background-color: $color-bg-default-dark;
     color: white;
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-size: $font-size-default;
     text-decoration: none;
     align-self: center;
@@ -34,7 +34,8 @@
     transition: all .3s  ease-in; 
 
     &:hover{
-      transform: scale(1.1); 
+      transform: scale(1.1);
+      box-shadow: 2px 2px 5px 2px #DEDEDE;
     }
   }
 }

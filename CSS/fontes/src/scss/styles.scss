@@ -1,9 +1,6 @@
-$color-font: #333 ;
-$color-bg-default: rgb(236, 235, 241);
-$color-bg-default-dark: rgb(87, 75, 146);
-$color-bg-boxes: rgb(131, 250, 160);
-$font-default: Arial, Helvetica, sans-serif;
-$font-size-default: 1.6rem;
+@import 'vars';
+@import 'vitrine';
+@import 'fonts';
 
 
 html {
@@ -18,7 +15,7 @@ html {
 
 body {
     background-color: $color-bg-default;
-    font-family: $font-default;
+    font-family: 'made_tommyregular', 'sans-serif';
 }
 
 h1 {
@@ -55,4 +52,3 @@ header, section, footer{
 
 // }
 
-@import 'vitrine'
