@@ -1,0 +1,26 @@
+header .container {
+
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85vh;
+
+    .hero {
+        align-items: flex-end;
+        background-image: url('../assets/images/sneaker.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 45rem;
+        display: flex;
+        padding-bottom: 4rem;
+        width: 100%;
+        margin-top: 2rem;
+
+        h1 {
+            padding: 1rem 0 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+}

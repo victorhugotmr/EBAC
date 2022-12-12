@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../src/assets/files/site.webmanifest">
+    <title>Sneaker Store</title>
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/images/sneakerstore.png" alt="Sneaker Store">
+                </div>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#como-funciona">Como funciona</a>
+                    <a class="nav__item" href="#cadastro">Cadastre-se</a>
+                </nav>
+                <div class="hero">
+                    <h1>Faça seu cadastro e receba na sua casa o tênis que mais combina com você</h1>
+                </div>
+            </div>
+        </header>
+        <section id="sobre">
+            <div class="container">
+                <article>
+                    <h2>Sobre nós</h2>
+                    <p>Já pensou em receber na sua casa um tênis escolhido a dedo por especialistas baseado no seu gosto?</p>
+                    <p>É isso que nós fazemos! Com uma equipe expert em moda, nós vemos aquilo que mais combina com você!</p>
+                </article>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <article>
+                    <h2>Produtos</h2>
+                    <div class="vitrine">
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/tenis.png" alt="Sneakers">
+                            </div>
+                            <h3 class="vitrine__title">Sneakers</h3>
+                            <p class="vitrine__desc">
+                                As melhores marcas estão aqui
+                            </p>
+                            <a href="#sneakers" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/camisa.png" alt="Camisas">
+                            </div>
+                            <h3 class="vitrine__title">Camisas</h3>
+                            <p class="vitrine__desc">
+                                De Lacoste à Off White
+                            </p>
+                            <a href="#camisas" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/calca.png" alt="Calças e Bermudas">
+                            </div>
+                            <h3 class="vitrine__title">Calças e Bermudas</h3>
+                            <p class="vitrine__desc">
+                                Tudo pra completar aquele kit  
+                            </p>
+                            <a href="#calcas" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/acessorios.png" alt="Acessórios">
+                            </div>
+                            <h3 class="vitrine__title">Acessórios</h3>
+                            <p class="vitrine__desc">
+                                Os melhores itens pro seu drip
+                            </p>
+                            <a href="#acessorios" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section id="como-funciona">
+            <div class="container">
+                <article>
+                    <h2>Como funciona</h2>
+                    <div class="steps">
+                        <div class="steps__item">
+                            <img src="./assets/images/formulario.png" alt="Preencha o formulário">
+                            <h3>Preencha o formulário com base no seu gosto</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/pagamento.png" alt="Faça o pagamento">
+                            <h3>Faça o pagamento do seu pedido</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/preparacao.png" alt="Preparação">
+                            <h3>Após a confirmação do pagamento, iremos preparar o seu pedido.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/entrega.png" alt="Entrega">
+                            <h3>Em seguida o seu pedido será enviado.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/produto.png" alt="Tênis">
+                            <h3>Pronto! <br> Agora você tem um tênis baseado no seu gosto e com um preço justo</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section id="cadastro">
+            <div class="container">
+                <article>
+                    <h2>Cadastro</h2>
+                    <div class="container row">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="nome" type="text" placeholder="Nome" data-sb-validations="required" />
+                                <label for="nome">Nome</label>
+                                <div class="invalid-feedback" data-sb-feedback="nome:required">Obrigatório</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="Email" data-sb-validations="required,email" />
+                                <label for="email">Email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Obrigatório</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email inválido</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="telefone" type="text" placeholder="Telefone" data-sb-validations="required" />
+                                <label for="telefone">Telefone</label>
+                                <div class="invalid-feedback" data-sb-feedback="telefone:required">Obrigatório</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="idade" type="text" placeholder="Idade" data-sb-validations="required" />
+                                <label for="idade">Idade</label>
+                                <div class="invalid-feedback" data-sb-feedback="idade:required">Obrigatório</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label d-block">Selecione</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="nike" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="nike">Nike</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="adidas" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="adidas">Adidas</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="converse" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="converse">Converse</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="offWhite" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="offWhite">Off White</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="fila" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="fila">Fila</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="reebok" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="reebok">Reebok</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="gucci" type="checkbox" name="selecione" data-sb-validations="required" />
+                                    <label class="form-check-label" for="gucci">Gucci</label>
+                                </div>
+                                <div class="invalid-feedback" data-sb-feedback="selecione:required">Selecione ao menos UMA opção</div>
+                            </div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Cadastro realizado com sucesso</div>
+                                    <p>Fique atento ao email para os próximos passos 🔥 </p>
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Erro! 🚨 Tente novamente</div>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Cadastrar</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                </article>
+            </div>
+            
+        </section>
+
+        <footer>
+            <div class="container">
+                <p> <span id="year"></span> &copy; Todos os direitos reservados. <br>
+                    <small>Desenvolvido por <a href="https://github.com/cavalcantemmarcelo">Marcelo</a>.</small> <br>
+                    <small>Editado por</small> <a href="https://github.com/victorhugotmr">Victor</a> <br>
+                    <small>Logo por <a href="https://dribbble.com/Shalamanov">Petar Shalamanov @ Dribbble</a></small>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+footer {
+    padding: 1rem;
+    p {
+        color: $font-color-primary;
+        font-size: $font-size-default;
+        margin: 0;
+        a {
+            color: $color-secondary;
+            font-weight: bold;
+            &:hover{
+                color: $font-color-primary
+
+            }
+        }
+    }
+}
