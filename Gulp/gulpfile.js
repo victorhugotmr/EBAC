@@ -15,7 +15,6 @@ function tarefasCSS(callback){
     gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.css',
         './vendor/owl/css/owl.css',
-        './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
         './src/css/style.css'
     ])
     .pipe(concat('styles.css'))
@@ -86,7 +85,7 @@ gulp.task('serve', function(){
     gulp.watch('./src/**/*').on('change', reload)
 })
 
-const process = series( tarefasHTML, tarefasCSS, tarefasJS )
+const process = series( tarefasHTML, tarefasCSS, tarefasJS)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
