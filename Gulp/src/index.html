@@ -87,7 +87,7 @@
                 <div class="line-dec"></div>
                 <p>HTML Template can be converted into your desired CMS theme. </p> -->
             </div>
-        </div>
+    </div>
         
         <div id="featured" class="featured-items">
             <div class="container">
@@ -178,6 +178,40 @@
                 </div>
             </div>
         </div>
+
+        <div class="subscribe-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Receba novidades</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="main-content">
+                            <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                            <div class="container">
+                                <form id="subscribe" class="form" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <fieldset>
+                                                <input name="email" type="text" class="form-control" id="email" value="" placeholder="Seu e-mail..." >
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="footer" id="footer">
             <div class="container">
@@ -225,55 +259,113 @@
             </div>
         </div>
 
-        
-        <!-- Modal trigger button -->
-        <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-          Launch
-        </button> -->
-        
-        <!-- Modal Body -->
-        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+<!-- Modal trigger button -->
+<button type="button" class="btn btn-primary btn-lg visually-hidden" data-bs-toggle="modal" data-bs-target="#modalId">
+    Launch
+  </button>
+  
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <!-- Optional: Place to the bottom of scripts -->
-        <!-- <script>
-            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-        
-        </script> -->
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  <!-- Optional: Place to the bottom of scripts -->
+  <!-- <script>
+      const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+  
+  </script> -->
 
-        <div id="contato" class=" visually-hidden">
-            <form action="" class="form">
-                <div class="mb-3">
-                  <label for="nome" class="form-label">Nome</label>
-                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
-                  <small id="helpNome" class="text-muted">Digite um nome válido</small>
-                </div>
-            </form>
-        </div>
+  <div id="contato" class="visually-hidden">
 
-        <div id="sobre">
-            
-        </div>
-        
+      <form action="post" class="form">
+
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+            <small id="helpNome" class="text-muted">
+                Digite um nome válido
+            </small>
+          </div>
+
+          <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+              <small id="helpEmail" class="text-muted">
+                  Digite um e-mail válido
+              </small>
+          </div>
+
+          <div class="mb-3">
+              <label for="date" class="form-label">Data</label>
+              <input type="text" name="date" id="date" class="form-control" placeholder="Digite a data" aria-describedby="helpDate">
+              <small id="helpDate" class="text-muted">
+                  Digite uma data válida
+              </small>
+          </div>
+
+          <div class="mb-3">
+              <label for="time" class="form-label">Hora</label>
+              <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+              <small id="helpHora" class="text-muted">
+                  Digite uma hora válida
+              </small>
+          </div>
+
+          <div class="mb-3">
+              <label for="cep" class="form-label">CEP</label>
+              <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep" aria-describedby="helpCEP">
+              <small id="helpCEP" class="text-muted">
+                  Digite um CEP válido
+              </small>
+          </div>
+
+          <div class="mb-3">
+              <label for="phone" class="form-label">Celular</label>
+              <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu telefone" aria-describedby="helpCelular">
+              <small id="helpCelular" class="text-muted">
+                  Digite um celular válido com DDD
+              </small>
+          </div>
+
+          <div class="mb-3">
+              <label for="cpf" class="form-label">CPF</label>
+              <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF">
+              <small id="helpCPF" class="text-muted">
+                  Digite um CPF válido
+              </small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+      </form>
+
+  </div>
+
+  <div id="sobre" class="visually-hidden">
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+
+</div>
         
         
         <script src="../node_modules/jquery/dist/jquery.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../vendor/owl/js/owl.js"></script>
         <script src="./js/custom.js"></script>
-        
+
     </body>
     </html>
