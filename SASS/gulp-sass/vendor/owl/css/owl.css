@@ -93,6 +93,10 @@
   .owl-carousel.owl-rtl .owl-item {
     float: right; }
 
+    .owl-item.active{
+      margin: 13rem;
+    }
+
 /* No Js */
 .no-js .owl-carousel {
   display: block; }
