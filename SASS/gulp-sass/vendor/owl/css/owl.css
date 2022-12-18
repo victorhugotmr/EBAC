@@ -6,7 +6,7 @@
 /*
  *  Owl Carousel - Core
  */
-.owl-carousel {
+ .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -92,10 +92,6 @@
     direction: rtl; }
   .owl-carousel.owl-rtl .owl-item {
     float: right; }
-
-    .owl-item.active{
-      margin: 13rem;
-    }
 
 /* No Js */
 .no-js .owl-carousel {
