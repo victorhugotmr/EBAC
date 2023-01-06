@@ -1,0 +1,78 @@
+.landscape {
+  background: var(--c1);
+  height: 75vh;
+  overflow: hidden;
+  position: relative;
+
+  
+  &__layer {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    
+    transform: translateY(calc(var(--scrollPos, 0) * var(--offset, 0)));
+
+    @media (prefers-reduced-motion: reduce) {
+      transform: translateY(0);
+    }
+  }
+
+  
+  &__image {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    max-height: 100%;
+    max-width: 300%;
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 2500px;
+
+    svg {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+
+html {
+  --c0: #d0ddf2;
+  --c1: #d0c6c8;
+  --c2: #cdae9f;
+  --c3: #ca9577;
+  --c4: #c67c50;
+  --c5: #c2622d;
+  --c6: #c25b37;
+  --c7: #d14e37;
+  --c8: #b83030;
+  --c9: #b91e2e;
+  --c10: #8f1229;
+}
+
+
+body {
+  background: var(--c10);
+  color: #fff;
+  min-height: 200vh;
+}
+
+
+.wrap {
+  margin: 5rem auto;
+  max-width: 70rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--c6);
+}
