@@ -42,3 +42,10 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .imgCont{
+    display: flex;
+    flex-direction: column;
+  }
+}
