@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title{
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 170, 255);
+}
+
+.wrapper{
+  padding: 1rem;
+  background: rgb(241, 240, 240);
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-wrapper ,#cep-wrapper{
+  width: 400px;
+  height: 60vh;
+  background: rgb(205, 239, 255);;
+}
+
+
+.address, #formCEP, #formValidate{
+  display: grid;
+}
+
+
+.border{
+  padding: 1.5rem;
+  display: grid;
+  border: 3px solid rgb(0, 170, 255);
+  border-radius: 1rem;
+}
+
+input[type="text"]{
+  padding: .25rem .5rem;
+  width: 100%;
+  height: 40px;
+  border: .15rem solid rgb(0, 170, 255);
+  border-radius: .5rem;
+  margin-bottom: .2rem;
+}
+
+input[type="text"]::placeholder{
+  color: rgba(0, 0, 0, .5)
+}
+
+input[type="text"]:focus-visible{
+  outline: none;
+
+}
+
+label{
+  display: none;
+}
+
+
+button{
+  padding: .5rem;
+  width: 100%;
+  background: rgb(0, 170, 255);
+  border-radius: .5rem;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  transition: all ease-in .3s;
+  margin-bottom: 1rem;
+}
+
+button:hover{
+  background: rgb(2, 159, 238);
+  transform: scale(1.1);
+}
+
+
+
+#messageForm{
+  height: 120px;
+}
+
+#message p{
+  background: red;
+  color: #fff;
+  margin-bottom: 0.15rem;
+  width: 300px;
+}
+
+@media (max-width: 900px){
+  .wrapper{
+    flex-direction: column;
+  }
+
+  .form-wrapper ,#cep-wrapper{
+    width: 80%;
+    height: 60vh;
+  }
+}
