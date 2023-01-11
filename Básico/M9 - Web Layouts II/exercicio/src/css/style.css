@@ -60,7 +60,6 @@ a {
   footer {
     height: 10vh;
     width: 100vw;
-    position: absolute;
     bottom: 0;
     padding: 1.5rem;
     display: flex;
@@ -68,6 +67,9 @@ a {
     align-items: center;
     background: #000;
     color: #FCA311;
+  }
+  form {
+    width: 80%;
   }
 }
 ::placeholder {
@@ -108,7 +110,7 @@ form {
   background: #FCBF49;
   border-radius: 0.625rem;
 }
-form div {
+form .div {
   margin: 0.625rem;
   padding: 0.625rem;
   border-bottom: 1px solid #F77F00;
@@ -125,11 +127,8 @@ form input[type=submit]:hover {
   color: #D62828;
 }
 
-.main {
-  padding: 0;
-}
 .main .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -175,12 +174,9 @@ a {
   color: #fff1ff;
 }
 
-.mainContent {
-  display: flex;
-}
 .mainContent .menuTitle {
   padding: 0.05rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   position: relative;
   margin-bottom: 1rem;
 }
@@ -193,13 +189,16 @@ a {
   bottom: 0;
 }
 .mainContent .menu {
-  height: 50vh;
+  height: 20vh;
   background: #fff1ff;
   padding: 1rem;
 }
 .mainContent .menu nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
 }
 .mainContent .menu nav a {
   color: #E63946;
@@ -300,7 +299,6 @@ footer a {
   footer {
     height: 10vh;
     width: 100vw;
-    position: absolute;
     bottom: 0;
     padding: 1.5rem;
     display: flex;
@@ -308,6 +306,9 @@ footer a {
     align-items: center;
     background: #000;
     color: #FCA311;
+  }
+  form {
+    width: 80%;
   }
 }
 
