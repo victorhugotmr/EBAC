@@ -1,0 +1,121 @@
+@import '_vars.scss';
+@import '_reset.scss';
+@import '_queries.scss';
+@import '_form.scss';
+
+body{
+    overflow-x: hidden;
+    background: $azul1;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+#header{
+    padding: 1rem;
+    background: $azul2;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid $cinza;
+
+    .fa-rocket{
+        font-size: 5rem;
+        color: $branco;
+    }
+}
+
+.mainContent{
+    display: flex;
+
+  .menuTitle{
+        padding: .05rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        margin-bottom: 1rem;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: $vermelho;
+            bottom: 0;
+    }
+    }
+
+    .menu{
+        height: 50vh;
+        background: $branco;
+        padding: 1rem;
+
+        nav{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                color: $vermelho;
+                margin-bottom: 1rem;
+
+                &:hover{
+                    background: $azul1;
+                    color: $branco;
+                    font-weight: bolder;
+                    padding: 0.15rem;
+                
+                }
+            }
+        }
+        
+    }
+    
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    bottom: 0;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $vermelho;
+    color: $branco;
+    
+    h5{
+    font-weight: 600;
+}
+a{
+    color: $cinza
+}
+}
+
+
+.main{
+    width: 100%;
+    padding: 1rem;
+    color: $branco;
+
+    a{
+        color: $branco;
+    }
+}
+
+.links{
+    width: 100vw;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        color: $branco;
+    }
+}
+
+@import '_queries.scss';
+
