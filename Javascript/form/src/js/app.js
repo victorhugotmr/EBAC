@@ -9,18 +9,17 @@ const rua = document.querySelector("#rua")
 const bairro = document.querySelector("#bairro")
 const cidade = document.querySelector("#cidade")
 const uf = document.querySelector("#uf")
-const messageCEP = document.querySelector("#messageCEP")
 const notNull = document.getElementsByClassName("not-null")
 
 console.log(formValidate, formCEP)
 
 function isEmpty(elem) {
-  return elem.value.length < 1 ? `The field <strong>${elem.name}</strong> can't be empty.` : ''
+  return elem.value.length < 1 ? `Error: <strong>${elem.name}</strong> is empty.` : ''
 }
 
 
 function validateEmail(elem){
-  return elem.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) ? '' : `Invalid <strong>e-mail</strong>`
+  return elem.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
 }
 
 formValidate.addEventListener("submit", function(event){
@@ -59,7 +58,7 @@ function updateAdress(data){
     cidade.value = (data.localidade)
     uf.value = (data.uf)
   } else {
-    message.innerHTML = `CEP não encontrado`
+    cep.value = `CEP não encontrado`
   }
 }
 
@@ -77,5 +76,3 @@ formCEP.addEventListener("submit", function(event){
     script.src = 'https://viacep.com.br/ws/' + cep.value + '/json?callback=updateAdress'
   }
 })
-
-  
