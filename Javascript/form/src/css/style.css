@@ -44,6 +44,15 @@ button:hover {
   transform: scale(1.1);
 }
 
+@media (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .form-wrapper, #cep-wrapper {
+    width: 80%;
+    height: 60vh;
+  }
+}
 i {
   margin-left: 0.5rem;
 }
@@ -91,16 +100,6 @@ i {
   color: rgb(241, 240, 240);
   margin-bottom: 0.15rem;
   width: 300px;
-}
-
-@media (max-width: 900px) {
-  .wrapper {
-    flex-direction: column;
-  }
-  .form-wrapper, #cep-wrapper {
-    width: 80%;
-    height: 60vh;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+@media (max-width: 900px){
+  .wrapper{
+    flex-direction: column;
+  }
+
+  .form-wrapper ,#cep-wrapper{
+    width: 80%;
+    height: 60vh;
+  }
+}

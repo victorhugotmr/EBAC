@@ -1,6 +1,7 @@
 @import '_reset';
 @import '_vars';
 @import '_form';
+@import '_queries';
 
 i{
   margin-left: .5rem;
@@ -47,19 +48,11 @@ i{
   height: 120px;
 }
 
-#message p{
+#message {
+  p {
   color: $white;
   margin-bottom: 0.15rem;
   width: 300px;
-}
-
-@media (max-width: 900px){
-  .wrapper{
-    flex-direction: column;
-  }
-
-  .form-wrapper ,#cep-wrapper{
-    width: 80%;
-    height: 60vh;
   }
 }
+
