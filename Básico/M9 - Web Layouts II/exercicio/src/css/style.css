@@ -156,10 +156,6 @@ body {
   background: #1D3557;
 }
 
-a {
-  text-decoration: none;
-}
-
 #header {
   padding: 1rem;
   background: #457B9D;
@@ -174,6 +170,9 @@ a {
   color: #fff1ff;
 }
 
+.mainContent {
+  position: relative;
+}
 .mainContent .menuTitle {
   padding: 0.05rem;
   margin-bottom: 1rem;
@@ -202,16 +201,14 @@ a {
 }
 .mainContent .menu nav a {
   color: #E63946;
-  margin-bottom: 1rem;
 }
 .mainContent .menu nav a:hover {
-  background: #1D3557;
-  color: #fff1ff;
-  font-weight: bolder;
-  padding: 0.15rem;
+  color: #1D3557;
+  transition: all ease-in 0.2s;
 }
 
 footer {
+  position: absolute;
   height: 10vh;
   width: 100vw;
   bottom: 0;

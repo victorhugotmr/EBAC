@@ -8,11 +8,6 @@ body{
     background: $azul1;
 }
 
-a{
-    text-decoration: none;
-}
-
-
 
 #header{
     padding: 1rem;
@@ -31,6 +26,8 @@ a{
 
 .mainContent{
     // display: flex;
+    position: relative;
+
 
   .menuTitle{
         padding: .05rem;
@@ -61,13 +58,10 @@ a{
 
             a{
                 color: $vermelho;
-                margin-bottom: 1rem;
 
                 &:hover{
-                    background: $azul1;
-                    color: $branco;
-                    font-weight: bolder;
-                    padding: 0.15rem;
+                    color: $azul1;
+                    transition: all ease-in .2s;
                 
                 }
             }
@@ -78,6 +72,7 @@ a{
 }
 
 footer {
+    position: absolute;
     height: 10vh;
     width: 100vw;
     bottom: 0;
