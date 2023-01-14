@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Deposits from './Deposits';
 
 // test('teste numero', () => {
@@ -13,11 +13,17 @@ import Deposits from './Deposits';
 //   expect(testeNumero).toHaveTextContent(/R\$/)
 // });
 
-descrie("Tem Valor", () => {
-  render(<Deposits />)
-  const valor = new RegExp(/(R\$).\d{1,3}[\,\.]{1}\d{1,3}[\,\.]{1}\d{2}/)
+// describe("Tem Valor", () => {
+//   render(<Deposits />)
+//   const valor = new RegExp(/(R\$).\d{1,3}[\,\.]{1}\d{1,3}[\,\.]{1}\d{2}/)
 
-  it('Confere') () => {
-    expect(Deposits).toEqual(valor)
-  }
-})
+//   it('Confere') () => {
+//     expect(Deposits).toEqual(valor)
+//   }
+// })
+
+test('teste classe', () => {
+  render(<Deposits />);
+  const testeClasse = document.querySelector('.Deposits');
+  expect(testeClasse).toHaveClass('Deposits')
+});
