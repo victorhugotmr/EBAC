@@ -55,15 +55,15 @@ function preventDefault(event) {
 export default function Orders() {
   return (
     <React.Fragment>
-      <Title>Recent Orders</Title>
+      <Title>Pedidos Recentes</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>Name</TableCell>
-            <TableCell>Ship To</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell>Data</TableCell>
+            <TableCell>Nome</TableCell>
+            <TableCell>Destino</TableCell>
+            <TableCell>Modo de Pagamento</TableCell>
+            <TableCell align="right">Total das Vendas</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -79,7 +79,7 @@ export default function Orders() {
         </TableBody>
       </Table>
       <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
-        See more orders
+        Ver mais
       </Link>
     </React.Fragment>
   );
