@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <title>GAPP</title>
 </head>
+
 <body>
   <header>
     <div class="header-logo">
@@ -30,25 +32,45 @@
     <div class="banner-content">
       <div class="banner-text">
         <h1>Ferramentaria</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi sunt minima neque distinctio, quod fugiat iste dicta? Nobis doloribus deserunt dignissimos earum maxime quidem officiis, ipsam explicabo blanditiis itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi sunt minima neque distinctio, quod
+          fugiat iste dicta? Nobis doloribus deserunt dignissimos earum maxime quidem officiis, ipsam explicabo
+          blanditiis itaque?</p>
       </div>
-      
-      <button class="move backward"><i class="fa-solid fa-chevron-left"></i></button>
-      <button class="move forward"><i class="fa-solid fa-chevron-right"></i></button>
+
+      <div class="controls">
+        <div class="arrows">
+          <button class="move backward"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="move forward"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        
+
+        <div class="dots">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <section id="info">
     <div class="info-content">
       <div class="conheca">
         <h4>Conheça a GAPP</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eos mollitia quae fugiat minus alias maiores culpa debitis molestiae accusantium labore commodi suscipit? Non at facere sit sapiente in reiciendis.</p>
-        <button class="info-button"><a href="">Saiba Mais</a><span><i class="fa-solid fa-chevron-right span-button"></i></span></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eos mollitia quae fugiat minus alias
+          maiores culpa debitis molestiae accusantium labore commodi suscipit? Non at facere sit sapiente in reiciendis.
+        </p>
+        <button class="info-button active"><a href="">Saiba Mais<i
+              class="fa-solid fa-chevron-right span-button"></i></a></button>
       </div>
       <div class="produtos">
         <h4>Produtos e Serviços</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eos mollitia quae fugiat minus alias maiores culpa debitis molestiae accusantium labore commodi suscipit? Non at facere sit sapiente in reiciendis.</p>
-        <button class="info-button"><a href="">Saiba Mais</a><span><i class="fa-solid fa-chevron-right span-button"></i></span></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eos mollitia quae fugiat minus alias
+          maiores culpa debitis molestiae accusantium labore commodi suscipit? Non at facere sit sapiente in reiciendis.
+        </p>
+        <button class="info-button"><a href="">Saiba Mais<i
+              class="fa-solid fa-chevron-right span-button info-icon"></i></a></button>
       </div>
       <div class="aplicacoes">
         <h4>Principais Aplicações</h4>
@@ -56,26 +78,31 @@
       </div>
     </div>
   </section>
-  
+
   <footer id="footer">
-    <div class="footer-logo">
+    <div class="footer-infos">
       <img src="./src/images/logo-gapp-footer.png" alt="GAPP logo footer" class="logo-footer">
+      <div class="address">
+        <p>Rua dos Bobos, 0 - Campo Grande</p>
+        <p>CEP: 21300-000 Rio de Janeiro - RJ - Brasil</p>
+        <p>Tel: +55 21 99999-9999</p>
+        <p>Email <span style="color: red;">email@email.com.br</span> </p>
+      </div>
     </div>
-    <div class="address">
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-    </div>
+
     <!-- <div class="shadow"><img src="./src/images/gapp-home_17.png" alt=""></div> -->
-    <div class="border"></div>
+    <div class="border">
+      <img src="./src/images/gapp-home_17.png" alt="">
+    </div>
     <div class="local">
       <img src="./src/images/icon-location.png" alt="Local" class="local-icon">
     </div>
     <div class="fale-footer">
       <a href="" class="fale-link">Fale Conosco</a>
-      <p></p>
+      <p>copyright © GAPP Industrial - Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="./src/js/index.js"></script>
 </body>
+
 </html>

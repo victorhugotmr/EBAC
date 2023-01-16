@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0;
   bottom: 0;
   margin: 0;
@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header{
   width: 100%;
   height: 130px;
   background: #fff;
@@ -16,7 +16,7 @@ header {
   padding: 22px 30px;
 }
 
-ul {
+ul{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,26 +24,27 @@ ul {
   list-style-type: none;
 }
 
-ul li a {
+ul li a {  
   color: #e12d52;
 }
 
-ul li a:hover {
+ul li a:hover {  
   color: #dc002d;
   font-weight: 500;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
-.current-page a {
+.current-page a{
   color: #8a8a8a;
   position: relative;
   margin-bottom: 10px;
+  
 }
 
-.current-page a::after {
+.current-page a::after{
   content: "";
   display: block;
   width: 100%;
@@ -52,7 +53,7 @@ a {
   position: absolute;
 }
 
-.fale {
+.fale{
   background: #d10029;
   width: 110px;
   height: 30px;
@@ -61,44 +62,44 @@ a {
   justify-content: center;
 }
 
-.fale a, .fale a:hover {
+.fale a, .fale a:hover{
   color: #fff;
 }
 
-#banner {
+#banner{
   display: flex;
   height: 312px;
 }
 
-.banner-content {
+.banner-content{
   background: red;
   padding: 50px;
   color: #fff;
 }
 
-.controls {
+.controls{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.dot {
+.dot{
   border: none;
   background: none;
   cursor: pointer;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
 
-.dot.active {
+.dot.active{
   background-color: #432e32;
 }
 
-.move {
+.move{
   height: 40px;
   width: 40px;
   border: none;
@@ -107,36 +108,37 @@ a {
   cursor: pointer;
 }
 
-.backward {
+.backward{
   background: #98001e;
 }
 
-.backward:hover {
+.backward:hover{
   background: #630014;
 }
 
-.forward {
-  background: #7a001a;
+.forward{
+background: #7a001a;
 }
 
-.forward:hover {
+.forward:hover{
   background: #98001e;
+
 }
 
-.banner-text {
+.banner-text{
   margin-bottom: 60px;
 }
 
-#info {
+#info{
   padding: 28px 40px;
 }
 
-.info-content {
+.info-content{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.info-button {
+.info-button{
   background: none;
   border: 2px solid #ccc;
   display: flex;
@@ -144,12 +146,12 @@ a {
   align-items: center;
 }
 
-.info-button.active a {
+.info-button.active a{
   color: #dc002d;
   padding: 4px;
 }
 
-.info-button.active i {
+.info-button.active i{
   background: #dc002d;
   color: #fff;
   padding: 4px;
@@ -157,12 +159,12 @@ a {
   margin-left: 6px;
 }
 
-.info-button a {
+.info-button a{
   color: #dc002d;
   padding: 4px;
 }
 
-.info-button i {
+.info-button i{
   background: #ccc;
   color: #fff;
   padding: 4px;
@@ -170,20 +172,25 @@ a {
   margin-left: 6px;
 }
 
-.info-button:hover i {
-  background: #dc002d;
-  color: #fff;
+.info-button:hover{
+  i{
+    background: #dc002d;
+    color: #fff;
+  }
+  
 }
 
-.info-content h4 {
-  margin-bottom: 40px;
+
+
+.info-content h4{
+  margin-bottom: 40px; 
 }
 
-.info-content p {
+.info-content p{
   margin-bottom: 30px;
 }
 
-#footer {
+#footer{
   height: 180px;
   width: 100%;
   background: #e7e7e7;
@@ -194,7 +201,7 @@ a {
   align-items: center;
 }
 
-.footer-infos {
+.footer-infos{
   width: 400px;
   display: flex;
   justify-content: center;
@@ -202,28 +209,26 @@ a {
   gap: 20px;
 }
 
-.address {
+.address{
   font-size: 12px;
   color: #333;
 }
 
-.local {
+.local{
   display: flex;
   justify-content: center;
 }
 
-.fale-footer {
+.fale-footer{
   display: grid;
   justify-items: right;
 }
 
-.fale-footer a {
-  color: #dc002d;
+.fale-footer a{
+  color: #dc002d
 }
-
-.fale-footer p {
+.fale-footer p{
   color: #7f7f7f;
   font-size: 12px;
 }
 
-/*# sourceMappingURL=style.css.map */
