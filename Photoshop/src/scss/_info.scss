@@ -1,0 +1,62 @@
+@import 'colors';
+
+#info{
+  padding: 28px 40px;
+
+  .info-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h4{
+      margin-bottom: 40px; 
+    }
+    
+    p{
+      margin-bottom: 30px;
+    }
+    
+    .info-button{
+      background: none;
+      border: 2px solid $light-grey;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      a{
+        color: #dc002d;
+        padding: 4px;
+      }
+
+      i{
+        background: $light-grey;
+        color: $white;
+        padding: 4px;
+        border-radius: 2px;
+        margin-left: 6px;
+      }
+
+      &:hover{
+        i{
+          background: $red;
+          color: $white;
+        }
+      }
+
+      &.active{
+        a {
+          color: $red;
+          padding: 4px;
+        }
+        
+        i{
+          background: #dc002d;
+          color: $white;
+          padding: 4px;
+          border-radius: 2px;
+          margin-left: 6px;
+        }
+
+      }
+    }
+  }
+}

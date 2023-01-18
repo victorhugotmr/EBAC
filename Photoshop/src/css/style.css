@@ -6,6 +6,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   height: 130px;
@@ -23,18 +27,11 @@ ul {
   gap: 36px;
   list-style-type: none;
 }
-
 ul li a {
   color: #e12d52;
 }
-
 ul li a:hover {
-  color: #dc002d;
-  font-weight: 500;
-}
-
-a {
-  text-decoration: none;
+  color: #98001e;
 }
 
 .current-page a {
@@ -42,7 +39,6 @@ a {
   position: relative;
   margin-bottom: 10px;
 }
-
 .current-page a::after {
   content: "";
   display: block;
@@ -60,8 +56,14 @@ a {
   align-items: center;
   justify-content: center;
 }
-
-.fale a, .fale a:hover {
+.fale a {
+  color: #fff;
+}
+.fale:hover {
+  color: #fff;
+  background: #630114;
+}
+.fale:hover a {
   color: #fff;
 }
 
@@ -69,20 +71,40 @@ a {
   display: flex;
   height: 312px;
 }
-
-.banner-content {
-  background: red;
+#banner .banner-content {
+  background: #dc002d;
   padding: 50px;
   color: #fff;
 }
-
-.controls {
+#banner .banner-content .banner-text {
+  margin-bottom: 60px;
+}
+#banner .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.dot {
+#banner .controls .move {
+  height: 40px;
+  width: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#banner .controls .move.backward {
+  background: #98001e;
+}
+#banner .controls .move.backward:hover {
+  background: #630114;
+}
+#banner .controls .move.forward {
+  background: #630114;
+}
+#banner .controls .move.forward:hover {
+  background: #98001e;
+}
+#banner .dot {
   border: none;
   background: none;
   cursor: pointer;
@@ -93,94 +115,55 @@ a {
   -moz-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
-
-.dot.active {
+#banner .dot.active {
   background-color: #432e32;
-}
-
-.move {
-  height: 40px;
-  width: 40px;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.backward {
-  background: #98001e;
-}
-
-.backward:hover {
-  background: #630014;
-}
-
-.forward {
-  background: #7a001a;
-}
-
-.forward:hover {
-  background: #98001e;
-}
-
-.banner-text {
-  margin-bottom: 60px;
 }
 
 #info {
   padding: 28px 40px;
 }
-
-.info-content {
+#info .info-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
-.info-button {
+#info .info-content h4 {
+  margin-bottom: 40px;
+}
+#info .info-content p {
+  margin-bottom: 30px;
+}
+#info .info-content .info-button {
   background: none;
   border: 2px solid #ccc;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.info-button.active a {
+#info .info-content .info-button a {
   color: #dc002d;
   padding: 4px;
 }
-
-.info-button.active i {
-  background: #dc002d;
-  color: #fff;
-  padding: 4px;
-  border-radius: 2px;
-  margin-left: 6px;
-}
-
-.info-button a {
-  color: #dc002d;
-  padding: 4px;
-}
-
-.info-button i {
+#info .info-content .info-button i {
   background: #ccc;
   color: #fff;
   padding: 4px;
   border-radius: 2px;
   margin-left: 6px;
 }
-
-.info-button:hover i {
+#info .info-content .info-button:hover i {
   background: #dc002d;
   color: #fff;
 }
-
-.info-content h4 {
-  margin-bottom: 40px;
+#info .info-content .info-button.active a {
+  color: #dc002d;
+  padding: 4px;
 }
-
-.info-content p {
-  margin-bottom: 30px;
+#info .info-content .info-button.active i {
+  background: #dc002d;
+  color: #fff;
+  padding: 4px;
+  border-radius: 2px;
+  margin-left: 6px;
 }
 
 #footer {
@@ -193,35 +176,29 @@ a {
   justify-content: center;
   align-items: center;
 }
-
-.footer-infos {
+#footer .footer-infos {
   width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-
-.address {
+#footer .footer-infos .address {
   font-size: 12px;
   color: #333;
 }
-
-.local {
+#footer .footer-infos .local {
   display: flex;
   justify-content: center;
 }
-
-.fale-footer {
+#footer .fale-footer {
   display: grid;
   justify-items: right;
 }
-
-.fale-footer a {
+#footer .fale-footer a {
   color: #dc002d;
 }
-
-.fale-footer p {
+#footer .fale-footer p {
   color: #7f7f7f;
   font-size: 12px;
 }

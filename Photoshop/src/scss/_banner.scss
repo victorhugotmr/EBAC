@@ -1,0 +1,63 @@
+@import 'colors';
+
+#banner {
+  display: flex;
+  height: 312px;
+
+  .banner-content {
+    background: $red;
+    padding: 50px;
+    color: $white;
+
+    .banner-text {
+      margin-bottom: 60px;
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .move {
+      height: 40px;
+      width: 40px;
+      border: none;
+      color: $white;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.backward {
+        background: $dark-red1;
+
+        &:hover {
+          background: $dark-red2;
+        }
+      }
+
+      &.forward {
+        background: $dark-red2;
+
+        &:hover {
+          background: $dark-red1;
+        }
+      }
+    }
+  }
+
+  .dot {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+
+    &.active {
+      background-color: #432e32;
+    }
+  }
+}
